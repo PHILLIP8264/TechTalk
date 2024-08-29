@@ -1,0 +1,498 @@
+body {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #FFFBE8;
+    color: white;
+  }
+  
+  .splash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    color: white;
+
+  }
+  
+  .splash-content {
+    color: white;
+    background: #333;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .splash-content h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .splash-content p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+  }
+  
+  .splash-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline from text */
+  }
+  
+  .splash-button:hover {
+    background-color: red;
+  }
+  
+
+
+
+
+ /* Slog and sign form */
+
+  .container {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #FFFBE8; /* Light gray background for contrast */
+}
+
+.Sign {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.Sign h1 {
+    font-size: 30px; /* Font size for labels */
+    color: white;
+    margin-bottom: 10px;
+}
+
+.Sign h2 {
+    font-size: 16px; /* Font size for labels */
+    color: white;
+    margin-bottom: 10px;
+    float: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Space between fields */
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2);
+    outline: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+
+
+
+ /* Navbar */
+
+
+
+
+.navbar {
+    font-family: "Roboto Condensed", sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    
+}
+
+
+.navbar .logo,
+.navbar .profile,
+.cart-nav,
+.navbar .logout {
+    display: flex;
+    align-items: center;
+    width: 60vh;
+    
+}
+
+.navbar .menu-icon {
+    cursor: pointer;
+    margin-right: 15px;
+    position: relative;
+}
+
+.navbar .menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-top: 0;
+}
+
+.navbar .logo {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.navbar .search-bar {
+    width: 60%;
+    position: relative;
+    margin-right: 20%;
+    text-align: center;
+
+}
+
+.navbar .search-bar input {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+
+.navbar .nav-cart img {
+    width: 50px;
+    height: 50px;
+    margin-right: 2vh;
+}
+
+.navbar .profile,
+.navbar .logout {
+    width: 50px;
+    height: 50px;
+    margin-right: 5vh;
+    cursor: pointer;
+}
+
+.navbar .profile img{ 
+    width: 50px;
+    height: 50px;
+    border-radius: 5vh;
+    margin-right: 2vh;
+}
+
+
+
+.navbar .logout img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.navbar .logout img {
+    margin-left: 15px;
+}
+
+
+
+/* Dropdown Menu Styles */
+
+.menu-icon .dropdown-menu {
+    font-family: "Roboto Condensed", sans-serif;
+    display: none;
+    position: absolute;
+    top: 10vh; /* Adjust based on the height of the menu icon */
+    margin-left: -2.1vh;
+    background-color: #444;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.menu-icon .dropdown-menu a {
+    color: white;
+    background-color: #333;
+    border: black 1px solid;
+    width: 200px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #555;
+}
+
+.menu-icon .dropdown-menu a:hover {
+    background-color: #555;
+}
+
+.menu-icon .dropdown-menu a:last-child {
+    border-bottom-right-radius: 3vh;
+}
+
+.menu-icon .dropdown-menu.show {
+    display: block;
+}
+
+
+
+
+/* product contaners */
+
+.product-container{
+    font-family: "Roboto Condensed", sans-serif;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    text-align: center;
+    gap: 20vh;
+    
+}
+
+.product-tiles{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 1vh; 
+    text-align: center;
+}
+
+.product-tiles-button{
+    margin: 0 auto;
+    width: 20vh;
+    height: 20vh;
+    background-color: #333;
+    border-radius: 2vh;
+    align-items: center;
+    
+}
+
+
+
+.product-tiles-button a {
+    font-family: "Roboto Condensed", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+
+.product-tiles :hover{
+    background-color: red;
+}
+
+.product-tiles-img{
+    margin-top: 2vh;
+    width: 13vh;
+}
+
+
+/* main feed */
+
+.main-feed-container{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.post-button {
+    width: 15vh;
+    float: left;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-button:hover {
+    background-color: #45a049;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 10px;
+}
+
+.modal-content input[type="text"],
+.modal-content textarea,
+.modal-content input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styles for Tag Bubbles */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag-bubble {
+    width: 10vh;
+    height: 3vh;
+    cursor: pointer;
+    display: inline-flex;
+    text-align: center;
+    line-height: 3vh;
+    border-radius: 20px;
+}
+
+.tag-bubble input[type="checkbox"] {
+    display: none;
+}
+
+.tag-bubble span {
+    width: 10vh;
+    height: 3vh;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Color change to red when checked */
+.tag-bubble input[type="checkbox"]:checked + span {
+    background-color: red; /* Changed to red */
+    color: white;
+    border-radius: 20px;
+}
+
+.tag-bubble input[type="checkbox"]:hover + span {
+    background-color: green; /* Changed to red */
+    color: white;
+    border-radius: 20px;
+}
+
+/* Optional: change text color and background for the unselected state */
+.tag-bubble span {
+    background-color: #e0e0e0; /* Default color */
+    color: #333; /* Default text color */
+    border-radius: 20px;
+}
+
+/* Modal styles */
+.modal-content button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+/* Products */
+
+.product-container{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+
+/* main feed posts */
+
+.post{
+    background-color: #333;
+    color: white;
+    margin-top: 10%;
+}
+
+.post{
+    background-color: #333;
+    color: white;
+}
+
