@@ -23,7 +23,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/tech-qa-webapp.git
+git clone https://github.com/PHILLIP8264/tech-qa-webapp.git
 Navigate to the project directory:
 
 bash
